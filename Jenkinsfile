@@ -9,7 +9,7 @@ pipeline {
             steps {
                 
                 
-                sh 'mvn -f JobPost/pom.xml -B -DskipTests clean package'
+                sh 'mvn --projects JobPost -B -DskipTests clean package'
             }
         }
     }
